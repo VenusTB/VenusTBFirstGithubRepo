@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    
+    <div class="navbar">
+        <div id="title">RECIPE WORLD</div>
+        <nav id="topnav">
+            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="recipes.html">RECIPES</a>
+            <a class="nav-link active" href="suggest.html">SUGGEST</a>
+        </nav>
+    </div>
+    
+    <form>
+        <div class="container">
+           <div class="row">
+                <div class="suggest-title">SUGGEST</div>     
+           </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="col-25">
+                        <label for="subject">Recipe Name*:</label>
+                    </div>  
+                </div>  
+                <div class="col-75">
+                    <input type="text" id="recipeName" name="recipeName" style="height:35px; width: 50%; border: 3px solid #0070C0;">
+                </div> 
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="col-25">
+                        <label for="subject">Ingredients*:</label>
+                    </div>  
+                </div>  
+                <div class="col-75">
+                    <textarea id="ingr" name="ingr" style="height:200px; width: 500px; border: 3px solid #0070C0;"></textarea>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="col-25">
+                        <label for="subject">Your Name*:</label>
+                    </div>  
+                </div>  
+                <div class="col-75">
+                    <input type="text" id="yourName" name="yourName" style="height:35px; width: 50%; border: 3px solid #0070C0;">
+                </div> 
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="col-25">
+                        <label for="subject">Your Email*:</label>
+                    </div>  
+                </div>  
+                <div class="col-75">
+                    <input type="email" id="yourEmail" name="yourEmail" style="height:35px; width: 50%; border: 3px solid #0070C0;">
+                    
+                </div> 
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="col-25">
+                        <label for="subject">Agree with T&C:</label>
+                    </div>  
+                </div>  
+                <div class="col-75">
+                    <input type="checkbox" id="checkbox" />
+                    <span class=""></span>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="col-25"></div>
+                </div>  
+                <div class="col-75">
+                    
+                        <input type="button" name="" class="inputButton" disabled="disabled" id="sendBt" value="Click to Submit"  />
+                    
+                </div> 
+            </div>
+        </div>
+          
+       </div>
+    </form>
+    <footer>
+        <p style="text-align: center; color: #7c7c7c">Copyright 2023 - RECIPE WORLD - venus.c.tomis</p>
+    </footer>
+    <script src="/js/submitPage.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
